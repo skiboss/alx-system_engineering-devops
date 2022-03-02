@@ -1,2 +1,2 @@
-#!/bin/bash
-ls sed -e '$a\'
+#!/bin/bash ls 
+sed -e '$a\'
