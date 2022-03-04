@@ -1,2 +1,3 @@
+#!/bin/bash
 0 search/string school\0 school
 !:mime text/x-plain
