@@ -1,2 +1,2 @@
 #!/bin/bash
-tree -a pwd
+find . -type d -name '.' | wc -l
