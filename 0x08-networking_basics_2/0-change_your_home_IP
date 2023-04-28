@@ -4,6 +4,7 @@
 #   - localhost resolves to 127.0.0.2
 #   - facebook.com resolves to 8.8.8.8
 
-cp /etc/hosts ~/hosts.cpy
-sed -i 's/127.*$/127.0.0.2 localhost\n8.8.8.8 facebook.com/' ~hosts.cpy
-cp -f ~/hosts.cpy /etc/hosts
+cp /etc/hosts ~/hosts.new
+echo "127.0.0.2		localhost" > ~/hosts.new
+echo "8.8.8.8		facebook.com" > ~/hosts.new
+cp -f ~/hosts.new /etc/hosts
